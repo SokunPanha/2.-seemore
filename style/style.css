@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url("https://i.pinimg.com/originals/47/0a/19/470a19a36904fe200610cc1f41eb00d9.jpg") fixed no-repeat;
+    background-size: cover;
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    transform: .6s;
+    color: white;
+}
+
+.main-box{
+    
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.269);
+    backdrop-filter: blur(40px);
+}
+.main-box h1{
+    text-align: center;
+}
+
+.main-box .answer{
+       width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition:  .5s;
+    
+}
+
+.main-box .question:hover{
+    cursor: pointer;
+}
+
+.main-box .question::before{
+    content: "+";
+    position: absolute;
+    right: 20px;
+}
+
+.main-box .q::before{
+    content: "-";
+}
+.main-box .active {
+    scrollbar-arrow-color: red;
+    transition: .5s;
+    overflow-y: auto;
+    height: 60px;
+}
+
+.main-box .active::-webkit-scrollbar{
+      width: 3px;
+}
+
+.main-box .active::-webkit-scrollbar-thumb{
+    background-color: black;
+}
